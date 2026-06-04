@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f0f0f;
+  color: #f0f0f0;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  width: 380px;
+  padding: 2rem;
+}
+
+.timer {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1rem;
+  letter-spacing: 3px;
+  color: #ff3f3f;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+}
+
+.toggle-btn {
+  width: 100%;
+  padding: 0.9rem;
+  background: #ff3f3f;
+  color: #fff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.2rem;
+  letter-spacing: 3px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.1s;
+}
+
+.toggle-btn:hover {
+  background: #e02e2e;
+}
+
+.toggle-btn:active {
+  transform: scale(0.98);
+}
+
+.profile-card {
+  margin-top: 1.5rem;
+  border: 2px solid #ff3f3f;
+  padding: 1.5rem;
+  animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.profile-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
+  filter: grayscale(20%);
+}
+
+.profile-card h4 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 1.8rem;
+  letter-spacing: 2px;
+  color: #ff3f3f;
+  margin-bottom: 0.3rem;
+}
+
+.profile-card .profession {
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #888;
+  margin-bottom: 1rem;
+}
+
+.profile-card .bio {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #ccc;
+  border-left: 3px solid #ff3f3f;
+  padding-left: 0.8rem;
+}
