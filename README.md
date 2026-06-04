@@ -30,4 +30,3 @@ npm install
 npm run dev
 ```
 
-## Project structure
